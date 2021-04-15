@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="Monnaie.js"></script>
+	<link rel="stylesheet" type="text/css" href="Styles_monnaie.css">
+    <title>Calcul du rendu de Monnaie</title>
+    <link rel="icon" href="pieces-monnaie.ico">
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>Bienvenue</h1>
+            <h2>Veuillez scanner vos articles</h2>
+        </header>
+        <div id="Processus">
+            <div class="ecriture" id="demande">
+                <h2>
+                    Commandes:
+                </h2>
+                <div>
+                    Malheureusement le scanner est hors services,
+                    Nous vous demanderons donc d'envoyer le prix 
+                    de chaque arcticles, appuyez sur "Confirmer" une fois
+                    tout vos articles envoyer.
+                </div>
+                <div id="ent_article">
+                    <input type="number" id="prix_article" placeholder="Entrer le prix de vos articles">
+                    <input type="button" id="envoyer" value="Envoyer !" onclick="prix_commande()">
+                    <p id="remarque"></p>
+                    <p id="visible"></p>
+                </div>
+                <div id="guide1">
+                    Vous pouvez appuyer sur "Retirer" pour retirer le dernier
+                    article envoyer, une fois tout vos articles envoyé, veuillez 
+                    confirmer.
+                </div>
+                <div id="guide2">
+                    Entrer ici le montant que vous nous donner,
+                    puis sélectionner "Payer" pour confirmer votre
+                    achat, vous pouvez annuler votre commande 
+                    en sélectionnant "Annuler".<br>
+                </div>
+                <input type="button" id="annul_article" value="Retirer" onclick="retirer()">
+                <input type="button" id="confirmer" value="Confirmer !" onclick="confirmation()">
+                <div id="paiement">
+                    <input type="number" id="montant" placeholder="Entrer le montant de votre paiement"><br>
+                    <input type="button" id="annuler" value="Annuler" onclick="history.go(0)"> 
+                    <input type="button" id="payer" value="Payer !" onclick="verification()"> 
+                </div>
+                <p id="insuffisant"></p>
+            </div>
+            <div id="contenant">
+                <img src="caisse.png">
+                <div id="result">00</div>
+                <input type="button" id="affichage" value="Afficher le prix total !" onclick="Total()">
+            </div>
+            <div class="ecriture" id="reponse">
+                <h2>
+                    Rendu de Monnaie:
+                </h2>
+                <div id="traitement">
+                    Traitement terminé !
+                </div>
+                <div id=pile>
+                    Nous vous remerçions de votre visite,<br>
+                    à bientôt !
+                    <input type="button" class="recharge" id="new1" value="Nouvelle commande !" onclick="history.go(0)">
+                </div>
+                <div>
+                    <p id="rendu"></p>
+                    <p id="b500"></p>
+                    <p id="b200"></p>
+                    <p id="b100"></p>
+                    <p id="b50"></p>
+                    <p id="b20"></p>
+                    <p id="b10"></p>
+                    <p id="b5"></p>
+                    <p id="p2"></p>
+                    <p id="p1"></p>
+                    <p id="fin"></p>
+                    <input type="button" class="recharge" id="new2" value="Nouvelle commande !" onclick="history.go(0)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

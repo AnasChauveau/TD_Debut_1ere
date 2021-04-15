@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="loto.js"></script>
+	<link rel="stylesheet" type="text/css" href="Style_Loto.css">
+    <title>Devenir riche c'est possible !</title>
+    <link rel="icon" href="riches.ico">
+</head>
+<body>
+    <header>
+        <img src="riches.ico">
+        <h1>
+            Tentez votre chance et empochez de coquettes sommes !
+        </h1>
+        <input type="button" id="btn_loto" value="Tenter ma chance !" onclick="tirage()">
+    </header>
+    <div class="page_jeu">
+        <div id="User">
+            <input id="num1" maxlength="2" placeholder="0">
+            <input id="num2" maxlength="2" placeholder="0">
+            <input id="num3" maxlength="2" placeholder="0">
+            <input id="num4" maxlength="2" placeholder="0">
+            <input id="num5" maxlength="2" placeholder="0">
+            <input id="num6" maxlength="2" placeholder="0">
+        </div>
+        <div id="aide">
+            <p class="Commentaire" id="identique"></p>
+            <p class="Commentaire" id="erreur"></p>
+            <input type="button" id="btn_aleatoire" value="Nombres Aléatoires" onclick="aleatoire()">
+        </div>
+        <div id="reponse">
+            <div id="rep1">00</div>
+            <div id="rep2">00</div>
+            <div id="rep3">00</div>
+            <div id="rep4">00</div>
+            <div id="rep5">00</div>
+            <div id="rep6">00</div>
+        </div>
+        <div id="chance">
+            <input type="button" id="btn_chance" value="Tester mes chances !" onclick="chance()">
+        </div>
+    </div>
+    
+</body>
+</html>

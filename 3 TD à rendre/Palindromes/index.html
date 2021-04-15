@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="Palindromes.js"></script>
+	<link rel="stylesheet" type="text/css" href="Styles_Palindromes.css">
+    <title>Tester vos Palindromes !</title>
+    <link rel="icon" href="idea.ico">
+</head>
+<body>
+    <div id="page">
+        <div id="jeu">
+            <header>
+                <img src="titre.png">
+            </header>
+            <input type="button" id="btn_aleatoire" value="Palindromes aléatoires !" onclick="aleatoire()">
+            <div id="teste">
+                <textarea type="text" id="saisie_user" placeholder="Entrer vos Palindromes"></textarea>
+            </div>
+            <input type="button" id="btn_palindromes" value="Tester le palindrome !" onclick="palindromes()">
+            <div id="rep">
+                <p id="reponse"></p>
+            </div>
+        </div>
+        <div id="remplissage">
+            <div id="phrase">
+                <h3>
+                    Phrases Palindromes
+                </h3>
+                <p>
+                    <b>Phrases:</b> (À Noël, elle te traça la carte, telle Léona.)<br>
+                    (C'est sec) (Ésope reste ici et se repose.)...<br><br>
+                    <b>Phrases favorite:</b> (Engage le jeu que je le gagne)<br> 
+                    (La mariée ira mal.) (Eh ! ça va la vache ?)...
+                </p>
+            </div>
+            <div id="mots">
+                <h3>
+                    Mots et Nom Palindromes
+                </h3>
+                <p>
+                    <b>Prénom:</b> Ada, Anna, Anina, Assa, Awa, Aya, Aziza, Bob, 
+                    Ève, Hannah, Maram, Natan, Nosson, Otto, Sabas ... <br><br>
+                    <b>Mots et verbes:</b> kayak, été, ici, gag, ressasser, sos,
+                    tôt, rêver, retâter, elle, aviva, alla ... 
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

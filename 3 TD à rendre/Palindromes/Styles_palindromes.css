@@ -1,0 +1,61 @@
+body{
+    background: url(hodei.png);
+    background-size: 100%;
+    margin: 0;
+}
+
+#jeu{
+    text-align: center;
+}
+
+header{
+    padding-top: 2%;
+}
+
+#saisie_user{
+    margin-top: 2%;
+    text-align: center; 
+    font-size: large;
+    height: 200px;
+    width: 300px;
+}
+
+#btn_palindromes{
+    margin-top: 1%;
+}
+
+#page{
+    background: url(blanc_style.png);
+    height: 900px;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#remplissage div{
+    background-color: rgba(253, 249, 249, 0.6);
+    display: inline-block;
+    margin-top: 5%;
+    width: 44%;
+}
+
+#phrase{
+    margin-left: 5%;
+}
+
+#mots{
+    vertical-align: top;
+}
+
+h3{
+    text-align: center;
+}
+
+#rep{
+    background: rgba(0, 0, 0, 0.8);
+    margin-left: 35%;
+    margin-right: 35%;
+}
+#reponse{
+    font-size: large;
+}

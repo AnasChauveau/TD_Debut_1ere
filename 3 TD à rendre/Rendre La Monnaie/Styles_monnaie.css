@@ -1,0 +1,101 @@
+body{
+    background: powderblue;
+    margin-top: 10%;
+}
+
+img{
+    width: 75%;
+}
+
+#page{
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-left: 8%;
+    margin-right: 8%;
+    border: solid lightgray;
+    border-radius: 5%;
+}
+
+header{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+
+header h1,h2{
+    margin: 0;
+}
+
+#Processus .ecriture, #contenant{
+    display: inline-block;
+    width: 31%;
+    
+}
+
+.ecriture{
+    padding: 1.5%;
+    vertical-align: top;
+}
+
+.ecriture div{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+#contenant {
+    position: relative;
+    text-align: center;
+    color: cornflowerblue;
+}
+  
+#result {
+    position: absolute;
+    top: 7.5%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 85%;
+}
+
+#prix_article{
+    text-align: center;
+    width: 180px;
+}
+
+#guide2{
+    display: none;
+}
+
+#annul_article{
+    margin-right: 170px;
+}
+
+#annuler{
+    margin-top: 5%;
+    margin-right: 170px;
+    display: none;
+}
+
+#montant{
+    margin-top: 5%;
+    width: 240px;
+    text-align: center;
+}
+
+#paiement{
+    display: none;
+}
+
+#traitement{
+    color: green;
+    font-size: 30px;
+    display: none;
+}
+
+#pile{
+    font-size: 21px;
+    display: none;
+}
+
+#new2{
+    display: none;
+}
